@@ -1,0 +1,30 @@
+{
+  "name": "yt-playlist-dashboard",
+  "version": "1.0.0",
+  "description": "A dashboard with enhanced features for using YouTube playlists",
+  "main": "index.html",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lualparedes/yt-playlist-dashboard.git"
+  },
+  "keywords": [
+    "Youtube API",
+    "playlist",
+    "dashboard"
+  ],
+  "author": "Luis Paredes (https://lualparedes.github.io)",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/lualparedes/yt-playlist-dashboard/issues"
+  },
+  "homepage": "https://github.com/lualparedes/yt-playlist-dashboard#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.1"
+  }
+}
