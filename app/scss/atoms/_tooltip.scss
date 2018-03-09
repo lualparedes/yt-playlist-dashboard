@@ -1,0 +1,18 @@
+.tooltip {
+    color: #fff;
+    background: #000;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+    position: fixed;
+    left: 22%;
+    bottom: 22%;
+    display: flex;
+    opacity: .9;
+    &::after {
+        @include pseudo(8px, 8px, #000);
+        left: 50%;
+        bottom: -4px;
+        transform: translateX(-50%) rotate(45deg);
+    }
+}
