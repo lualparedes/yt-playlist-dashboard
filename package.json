@@ -4,7 +4,9 @@
   "description": "A dashboard with enhanced features for using YouTube playlists",
   "main": "index.html",
   "scripts": {
-    "start": "nodemon server.js rs"
+    "start-app": "nodemon server.js",
+    "watch-styles": "sass app/scss:app/css --watch",
+    "start": "npm run watch-styles | npm run start-app"
   },
   "repository": {
     "type": "git",
