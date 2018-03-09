@@ -14,14 +14,20 @@
 @import 'utils/keyframes';
 
 /* Atoms */
-//@import 'atoms/icons';
+@import 'atoms/total-time';
 @import 'atoms/buttons';
 
 /* Molecules */
+@import 'molecules/inputs';
+@import 'molecules/scrollbar-x';
+@import 'molecules/copy-controls';
 
 /* Organisms */
 @import 'organisms/header';
 @import 'organisms/nav';
 @import 'organisms/footer';
+@import 'organisms/chart';
+@import 'organisms/playlist';
+
 
 /* Templates */

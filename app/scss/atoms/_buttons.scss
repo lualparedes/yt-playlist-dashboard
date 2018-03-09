@@ -1,3 +1,46 @@
 .btn-phantom {
-    
+    color: $c-accent1;
+    font-weight: 700;
+    border: 1px solid $g-x;
+    height: 48px;
+    position: relative;
+    border-radius: 2px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    transition: $t-regular;
+    border: 1px solid $c-accent2;
+    cursor: default;
+    &::after {
+        @include pseudo(100%, 0, $g-x);
+        top: 0;
+        right: 0;
+        z-index: -1;
+        border-radius: 2px;
+        transition: $t-regular;
+    }
+    &:hover {
+        color: #fff;
+        border: 1px solid #fff;
+        &::after {
+            height: 100%;
+        }
+    }
+    &--sm {
+        transform: scale(.75,.75);
+    }
+    &--copy-control-1 {
+        margin-bottom: 8px;
+    }
+}
+
+
+@media screen and (min-width: "470px") {
+    .btn-phantom {
+        &--copy-control-1 {
+            margin-bottom: 0;
+            margin-right: 8px;
+        }
+    }
 }

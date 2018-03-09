@@ -12,17 +12,68 @@
 
 <body>
 
+<div class="wrap">
 
+    <header class="header">
+        <h1 class="header__title">Playlist:</h1>
+        <div class="search-box">
+            <input type="text" class="search-box__input" placeholder="Enter the URL...">
+            <span class="search-box__icon">🔎</span>
+        </div>
+    </header>
 
-<div class="btn-phantom">.btn-phantom</div>
-<div class="btn-phantom--sm">.btn-phantom--sm</div>
-<div class="tooltip">.tooltip</div>
-<div class="progress-bar"></div>
-<div class="search-box"></div>
-<div class="loader"></div>
-<div class="total-time"></div>
-<div class="left-scroller"></div>
-<div class="scrollbar-x"></div>
+    <div class="main-dashboard">
+        <div class="total-time">
+            <span class="total-time__title">Total time: </span>
+            <span class="js-totalTime">1 h 25 min</span>
+        </div>
+        <div class="chart">
+            <div class="chart__content"></div>
+            <div class="chart__right-scroller" title="Scroll right ›"> <span> › </span></div>
+            <div class="scrollbar-x scrollbar-x--chart">
+                <div class="scrollbar-x__bar"></div>
+            </div>
+        </div>
+        <div class="copy-controls">
+            <button class="btn-phantom btn-phantom--copy-control-1">Copy all links</button>
+            <button class="btn-phantom">Copy all download links</button>
+        </div>
+    </div>
+
+    <table class="playlist">
+        <thead class="playlist__header">
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Time</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="playlist__row">
+                <td>1</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicin</td>
+                <td>00:00</td>
+                <td>
+                    <div class="btn-phantom btn-phantom--sm">Download</div>
+                </td>
+            </tr>
+                        <tr class="playlist__row">
+                <td>1</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicin</td>
+                <td>00:00</td>
+                <td>
+                    <div class="btn-phantom btn-phantom--sm">Download</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="tooltip">.tooltip</div>
+    <div class="progress-bar"><div class="progress-bar__bar"></div></div>
+
+    <div class="loader"></div>
+</div>
     
 <!-- Scripts -->
 <script src="js/scripts.js"></script>

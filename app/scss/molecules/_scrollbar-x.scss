@@ -1,0 +1,18 @@
+.scrollbar-x {
+    height: 8px;
+    background: rgba(#000, .25);
+    &__bar {
+        width: 33%;
+        height: 8px;
+        background: $c-text;
+        &:hover {
+            background: darken($c-text, 20);
+        }
+    }
+    &--chart {
+        position: absolute;
+        left: 24px;
+        right: 24px;
+        bottom: 24px;
+    }
+}

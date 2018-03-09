@@ -1,0 +1,31 @@
+// @notes 
+// [1] What it took to center the chevron arrow
+.chart {
+    position: relative;
+    background: #f4f4f4;
+    height: 256px;
+    margin: 24px 0;
+    &__content {
+
+    }
+    &__right-scroller {
+        @include center-absolute(false, true);
+        right: 24px;
+        font-size: 56px;
+        height: 48px;
+        width: 48px;
+        border-radius: 100%;
+        transition: $t-regular;
+        opacity: .5;
+        cursor: pointer;
+        & > span { // [1]
+            position: absolute;
+            top: -9px;
+            left: 17px;
+        }
+        &:hover {
+            opacity: 1;
+            background: rgba(#fff, .75);
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.total-time {
+    color: $c-accent1;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 24px;
+    &__title {
+        font-weight: 700;
+    }
+}

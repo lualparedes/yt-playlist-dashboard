@@ -1,12 +1,18 @@
 /* Colors */
 $c-bg: #fff;
-$c-text: #111;
+$c-text: #808080;
 $c-selection: #111;
+$c-accent1: #4b85ff;
+$c-accent2: #ae7eff;
 
 /* Gradients */
-// Prefixed with g-
+$g-x: linear-gradient(to right, $c-accent1, $c-accent2);
+$g-y: linear-gradient(to bottom, $c-accent1, $c-accent2);
 
 /* Font stacks */
-$f-headers: sans-serif;
-$f-body: sans-serif;
+$f-headers: 'Montserrat', sans-serif;
+$f-body: 'Montserrat', sans-serif;
 $f-base-size: 20px;
+
+/* Transitions */
+$t-regular: all .15s ease-out;

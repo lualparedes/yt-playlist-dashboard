@@ -1,0 +1,10 @@
+.header {
+    padding: 24px;
+    &__title {
+        text-transform: uppercase;
+        letter-spacing: .25em;
+        font-weight: 700;
+        color: $c-accent1;
+        margin-bottom: 8px;
+    }
+}
