@@ -1,4 +1,10 @@
-node_modules/
-app/css
+# System
+*.swp
 
+# Node
+node_modules/
 npm-debug.log
+
+# Styles
+app/css
+.sass-cache/
